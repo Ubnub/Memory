@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Logreg">
+  <DataContextMoniker Name="/LogregDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b4cb4b21-e9de-427a-9e19-b8527cc5fd50" absoluteBounds="0.5, 1.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LogregDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df25a319-00cc-4bc1-9297-3ec272e26f7e" absoluteBounds="0.51500000000000012, 2.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9828f00-0fc3-412e-906a-eb575b5513f6" absoluteBounds="3.625, 1.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LogregDataContext/Score" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c6afb95-18d4-41b8-92ee-4cd42cc0d629" absoluteBounds="3.64, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.44314697265625); (3.625 : 2.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LogregDataContext/User/User_Score" />
+      <nodes>
+        <classShapeMoniker Id="b4cb4b21-e9de-427a-9e19-b8527cc5fd50" />
+        <classShapeMoniker Id="a9828f00-0fc3-412e-906a-eb575b5513f6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

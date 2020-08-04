@@ -1,0 +1,12 @@
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\bin\Debug\MemoryGame.exe.config
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\bin\Debug\MemoryGame.exe
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\bin\Debug\MemoryGame.pdb
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\obj\Debug\MemoryGame.csprojAssemblyReference.cache
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\obj\Debug\MemoryGame.Form1.resources
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\obj\Debug\MemoryGame.MemoryForm.resources
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\obj\Debug\MemoryGame.Properties.Resources.resources
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\obj\Debug\MemoryGame.csproj.GenerateResource.cache
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\obj\Debug\MemoryGame.csproj.CoreCompileInputs.cache
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\obj\Debug\MemoryGame.exe
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\obj\Debug\MemoryGame.pdb
+C:\Users\arviu\Documents\GitHub\Memory\MemoryGame\MemoryGame\obj\Debug\MemoryGame.Icons.resources
