@@ -13,11 +13,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MemoryGame
-{
+{  
     public partial class Form1 : Form
     {
         Thread th;
-
         public static LogregDataContext db = new LogregDataContext();
         public string CurrentUser;
         public Form1()
@@ -108,7 +107,7 @@ namespace MemoryGame
                     {
                         if (PWquery!=null)
                         {
-                            if (LoginPasswordTB.Text == PWquery)
+                            if (LoginPasswordTB.Text == Crypto.Decrypt(PWquery.ToString()))
                             {
                                 CurrentUser=LoginUserNameTB.Text;
                                 this.Close();
@@ -195,12 +194,19 @@ namespace MemoryGame
                     return false;
                 }
             }
+            var UNquery2 = (from x in db.GetTable<User>() where x.UserName == RegUNTB.Text select x.UserName).FirstOrDefault();
 
             if ((String.IsNullOrEmpty(RegUNTB.Text)) || (String.IsNullOrEmpty(RegPWTB.Text)) || (String.IsNullOrEmpty(RegPWTB2.Text)) || (String.IsNullOrEmpty(RegEmailTB.Text)))
             {
                 RegisterErrorLB.Text = "All fields must be filled";
                 RegisterErrorLB.Visible = true;
                 RegisterErrorLB.ForeColor = System.Drawing.Color.Red;
+            }
+            else if (UNquery2 != null)
+            {
+                RegisterErrorLB.Text = "Username is taken";
+                RegisterErrorLB.ForeColor = System.Drawing.Color.Red;
+                RegisterErrorLB.Visible = true;
             }
             else if (RegPWTB.Text != RegPWTB2.Text)
             {
@@ -224,7 +230,7 @@ namespace MemoryGame
                 {
                     User newuser = new User();
                     newuser.UserName = RegUNTB.Text;
-                    newuser.Password = RegPWTB.Text;
+                    newuser.Password = Crypto.Encrypt(RegPWTB.Text);
                     newuser.Email = RegEmailTB.Text;
                     db.Users.InsertOnSubmit(newuser);
                     db.SubmitChanges();

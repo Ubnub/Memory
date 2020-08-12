@@ -75,7 +75,7 @@
             this.MainGB.Location = new System.Drawing.Point(12, 12);
             this.MainGB.Name = "MainGB";
             this.MainGB.Size = new System.Drawing.Size(401, 480);
-            this.MainGB.TabIndex = 3;
+            this.MainGB.TabIndex = 0;
             this.MainGB.TabStop = false;
             this.MainGB.Text = "Main";
             // 
@@ -115,7 +115,7 @@
             this.RegisterGB.Location = new System.Drawing.Point(12, 12);
             this.RegisterGB.Name = "RegisterGB";
             this.RegisterGB.Size = new System.Drawing.Size(401, 480);
-            this.RegisterGB.TabIndex = 7;
+            this.RegisterGB.TabIndex = 0;
             this.RegisterGB.TabStop = false;
             this.RegisterGB.Text = "Register";
             this.RegisterGB.Visible = false;
@@ -125,7 +125,7 @@
             this.RegisterBackButton.Location = new System.Drawing.Point(6, 418);
             this.RegisterBackButton.Name = "RegisterBackButton";
             this.RegisterBackButton.Size = new System.Drawing.Size(136, 56);
-            this.RegisterBackButton.TabIndex = 11;
+            this.RegisterBackButton.TabIndex = 5;
             this.RegisterBackButton.Text = "Back";
             this.RegisterBackButton.UseVisualStyleBackColor = true;
             this.RegisterBackButton.Click += new System.EventHandler(this.RegisterBackButton_Click);
@@ -136,7 +136,7 @@
             this.RegPWTB.Name = "RegPWTB";
             this.RegPWTB.PasswordChar = '*';
             this.RegPWTB.Size = new System.Drawing.Size(157, 20);
-            this.RegPWTB.TabIndex = 10;
+            this.RegPWTB.TabIndex = 1;
             this.RegPWTB.UseSystemPasswordChar = true;
             // 
             // RegPWTB2
@@ -145,7 +145,7 @@
             this.RegPWTB2.Name = "RegPWTB2";
             this.RegPWTB2.PasswordChar = '*';
             this.RegPWTB2.Size = new System.Drawing.Size(157, 20);
-            this.RegPWTB2.TabIndex = 9;
+            this.RegPWTB2.TabIndex = 2;
             this.RegPWTB2.UseSystemPasswordChar = true;
             // 
             // RegEmailTB
@@ -153,7 +153,7 @@
             this.RegEmailTB.Location = new System.Drawing.Point(111, 167);
             this.RegEmailTB.Name = "RegEmailTB";
             this.RegEmailTB.Size = new System.Drawing.Size(157, 20);
-            this.RegEmailTB.TabIndex = 8;
+            this.RegEmailTB.TabIndex = 3;
             // 
             // RegEmailLB
             // 
@@ -178,14 +178,14 @@
             this.RegUNTB.Location = new System.Drawing.Point(111, 89);
             this.RegUNTB.Name = "RegUNTB";
             this.RegUNTB.Size = new System.Drawing.Size(157, 20);
-            this.RegUNTB.TabIndex = 4;
+            this.RegUNTB.TabIndex = 0;
             // 
             // RegisterButton2
             // 
             this.RegisterButton2.Location = new System.Drawing.Point(161, 193);
             this.RegisterButton2.Name = "RegisterButton2";
             this.RegisterButton2.Size = new System.Drawing.Size(107, 43);
-            this.RegisterButton2.TabIndex = 3;
+            this.RegisterButton2.TabIndex = 4;
             this.RegisterButton2.Text = "Register";
             this.RegisterButton2.UseVisualStyleBackColor = true;
             this.RegisterButton2.Click += new System.EventHandler(this.RegisterButton2_Click);
@@ -240,7 +240,7 @@
             this.LoginBackButton.Location = new System.Drawing.Point(6, 418);
             this.LoginBackButton.Name = "LoginBackButton";
             this.LoginBackButton.Size = new System.Drawing.Size(136, 56);
-            this.LoginBackButton.TabIndex = 6;
+            this.LoginBackButton.TabIndex = 3;
             this.LoginBackButton.Text = "Back";
             this.LoginBackButton.UseVisualStyleBackColor = true;
             this.LoginBackButton.Click += new System.EventHandler(this.LoginBackButton_Click);
@@ -250,23 +250,23 @@
             this.LoginPasswordTB.Location = new System.Drawing.Point(110, 106);
             this.LoginPasswordTB.Name = "LoginPasswordTB";
             this.LoginPasswordTB.PasswordChar = '*';
-            this.LoginPasswordTB.Size = new System.Drawing.Size(158, 20);
-            this.LoginPasswordTB.TabIndex = 5;
+            this.LoginPasswordTB.Size = new System.Drawing.Size(157, 20);
+            this.LoginPasswordTB.TabIndex = 1;
             this.LoginPasswordTB.UseSystemPasswordChar = true;
             // 
             // LoginUserNameTB
             // 
-            this.LoginUserNameTB.Location = new System.Drawing.Point(111, 83);
+            this.LoginUserNameTB.Location = new System.Drawing.Point(110, 83);
             this.LoginUserNameTB.Name = "LoginUserNameTB";
             this.LoginUserNameTB.Size = new System.Drawing.Size(157, 20);
-            this.LoginUserNameTB.TabIndex = 4;
+            this.LoginUserNameTB.TabIndex = 0;
             // 
             // LoginButton2
             // 
             this.LoginButton2.Location = new System.Drawing.Point(274, 83);
             this.LoginButton2.Name = "LoginButton2";
             this.LoginButton2.Size = new System.Drawing.Size(107, 43);
-            this.LoginButton2.TabIndex = 3;
+            this.LoginButton2.TabIndex = 2;
             this.LoginButton2.Text = "Login";
             this.LoginButton2.UseVisualStyleBackColor = true;
             this.LoginButton2.Click += new System.EventHandler(this.LoginButton2_Click);
@@ -305,9 +305,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 556);
             this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.LoginGB);
             this.Controls.Add(this.RegisterGB);
             this.Controls.Add(this.MainGB);
-            this.Controls.Add(this.LoginGB);
             this.Name = "Form1";
             this.Text = "Start";
             this.Load += new System.EventHandler(this.Form1_Load);
